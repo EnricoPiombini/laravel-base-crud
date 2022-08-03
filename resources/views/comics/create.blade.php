@@ -45,7 +45,7 @@
 
         <div class="d-flex gap-2">
             <button type="submit" class="btn btn-success">Salva</button>
-            <a href="{{ route('faqs.index') }}" class="btn btn-secondary">Annulla</a>
+            <a href="{{ route('comics.index') }}" class="btn btn-secondary">Annulla</a>
 
 
         </div>
