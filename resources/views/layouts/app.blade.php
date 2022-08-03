@@ -11,14 +11,11 @@
 </head>
 
 <body>
-
     <main>
         <div class="container">
-           
-           <div> @yield('page_title')</div>
-           
-           <div>@yield('page_content')</div> 
+            @yield('page_content')
         </div>
+
     </main>
 
 </body>

@@ -2,16 +2,16 @@
 
 @section('page_title', 'Comics Info')
 
+
 @section('page_content')
+
     <form action="{{ route('comics.store') }}" method="post">
         @csrf
-
-
 
         <div class="mb-3">
             <label for="titleInput" class="form-label">Title</label>
             <input type="text" class="form-control" name="title" id="titleInput">
-           
+
         </div>
         <div class="mb-3">
             <label for="titleInput" class="form-label">Description</label>
@@ -38,13 +38,18 @@
             <input type="text" class="form-control" name="type" id="titleInput">
         </div>
 
-        <div class="d-flex gap-2">
+        {{-- <div class="d-flex gap-2">
             <button type="submit" class="btn btn-success">Save</button>
             <button type="submit" class="btn btn-danger"><a href="{{ route('comics.index') }}"></a>
-                Home</button>
+                Home</button> --}}
+
+        <div class="d-flex gap-2">
+            <button type="submit" class="btn btn-success">Salva</button>
+            <a href="{{ route('faqs.index') }}" class="btn btn-secondary">Annulla</a>
+
+
         </div>
-
-
-
+        {{-- </div> --}}
     </form>
+
 @endsection

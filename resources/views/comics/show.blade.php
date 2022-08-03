@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 
-@section('page_title', $comic->id)
+@section('page_title')
 
 
 
@@ -9,5 +9,12 @@
 
     <p>{{ $comic->description }}</p>
 
-    
+    <a href="{{ route('comics.index') }}" class="btn btn-secondary">Torna alla home</a>
+
+
+
+
+
+
+
 @endsection

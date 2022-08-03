@@ -1,12 +1,11 @@
 @extends('layouts.app')
- 
+
 @section('page_title')
-    
+
 
 
 @section('page_content')
     <div class="container">
-
         <h1>Comics Archive</h1>
 
         @foreach ($comics as $comic)
