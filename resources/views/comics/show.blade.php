@@ -7,4 +7,6 @@
 
 @section('page_content')
     <p>{{ $comic->description }}</p>
+
+    
 @endsection
