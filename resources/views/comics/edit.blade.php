@@ -3,7 +3,7 @@
 @section('page_title', 'Modifica Info')
 
 @section('page_content')
-    <form action="{{ route('comics.update') }}" method="post">
+    <form action="{{ route('comics.update', $comic->id) }}" method="post">
         @csrf
 
         @method('PATCH')
@@ -11,37 +11,37 @@
 
         <div class="mb-3">
             <label for="titleInput" class="form-label">Title</label>
-            <input type="text" class="form-control" name="title" id="titleInput" value="{{ $comic->$title }}">
+            <input type="text" class="form-control" name="title" id="titleInput">
         </div>
 
         <div class="mb-3">
             <label for="titleInput" class="form-label">Description</label>
-            <input type="text" class="form-control" name="description" id="titleInput"
-                value="{{ $comic->$description }}">
+            <input type="text" class="form-control" name="description" id="titleInput">
         </div>
 
         <div class="mb-3">
-            <label for="titleInput" class="form-label">Img</label>
-            <input type="text" class="form-control" name="thumb" id="titleInput" value="{{ $comic->$img }}">
+            <label for="titleInput" class="form-label">Thumb</label>
+            <input type="text" class="form-control" name="thumb" id="titleInput">
         </div>
+        
         <div class="mb-3">
             <label for="titleInput" class="form-label">Price</label>
-            <input type="text" class="form-control" name="price" id="titleInput" value="{{ $comic->$price }}">
+            <input type="text" class="form-control" name="price" id="titleInput">
         </div>
 
         <div class="mb-3">
             <label for="titleInput" class="form-label">Series</label>
-            <input type="text" class="form-control" name="series" id="titleInput" value="{{ $comic->$series }}">
+            <input type="text" class="form-control" name="series" id="titleInput">
         </div>
 
         <div class="mb-3">
             <label for="titleInput" class="form-label">Sale_date</label>
-            <input type="text" class="form-control" name="sale_date" id="titleInput" value="{{ $comic->$saleDate }}">
+            <input type="text" class="form-control" name="sale_date" id="titleInput">
         </div>
 
         <div class="mb-3">
             <label for="titleInput" class="form-label">Type</label>
-            <input type="text" class="form-control" name="type" id="titleInput" value="{{ $comic->$type }}">
+            <input type="text" class="form-control" name="type" id="titleInput">
         </div>
 
         <div class="d-flex gap-2">

@@ -14,12 +14,12 @@
 
     <main>
         <div class="container">
-            <h1>@yield('page_title')</h1>
-
-            @yield('page_content')
+           
+           <div> @yield('page_title')</div>
+           
+           <div>@yield('page_content')</div> 
         </div>
     </main>
-
 
 </body>
 

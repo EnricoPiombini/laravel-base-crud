@@ -11,6 +11,7 @@
         <div class="mb-3">
             <label for="titleInput" class="form-label">Title</label>
             <input type="text" class="form-control" name="title" id="titleInput">
+           
         </div>
         <div class="mb-3">
             <label for="titleInput" class="form-label">Description</label>
