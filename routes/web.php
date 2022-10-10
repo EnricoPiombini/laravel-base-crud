@@ -13,11 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('index');
+// });
 
-Route::get('/comics',"ComicController@index")->name("comics.index");
+Route::get('/',"ComicController@index")->name("comics.index");
 Route::get('/comics/create',"ComicController@create")->name("comics.create");
 Route::get('/comics/{comic}',"ComicController@show")->name("comics.show");
 Route::get('/comics/{comic}/edit',"ComicController@edit")->name("comics.edit");
